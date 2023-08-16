@@ -137,4 +137,15 @@
   html {
     font-family: 'Inter', sans-serif;
   }
+
+  .slide {
+      display: none;
+      opacity: 0;
+  }
+
+  .dark-mode {
+      background-color: #1a1a1a;
+      color: #ffffff;
+  }
+
 }
