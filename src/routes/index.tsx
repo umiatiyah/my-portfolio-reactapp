@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../views";
-import Navbar from "~/layouts/navbar";
-import Header from "~/layouts/header";
-import Footer from "~/layouts/footer";
+import Footer from "~/components/footer";
+import Navbar from "~/components/navbar";
+import Header from "~/components/header";
 
 const Navigations = () => {
   return (
