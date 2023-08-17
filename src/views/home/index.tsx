@@ -1,7 +1,7 @@
 import React from "react";
-import Contact from "./components/contact";
-import About from "./components/about";
-import Portfolio from "./components/portfolio";
+import Contact from "./contact/contact";
+import About from "./about/about";
+import Portfolio from "./portfolio/portfolio";
 
 const Home = () => {
   return (
