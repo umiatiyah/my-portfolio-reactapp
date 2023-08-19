@@ -1,7 +1,5 @@
 import React from "react";
-import Contact from "./contact/contact";
-import About from "./about/about";
-import Portfolio from "./portfolio/portfolio";
+import { About, Contact, Portfolio } from "./components";
 
 const Home = () => {
   return (
