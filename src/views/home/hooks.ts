@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-var users = {
+const users = {
     user_profile: {
         id: 0,
         user_id: 0,
@@ -16,7 +16,8 @@ var users = {
         updated_at: '',
         description: '',
         current_job: '',
-        github_link: ''
+        github_link: '',
+        email_link: ''
     },
     social_media: [{
         id: 0,
@@ -64,18 +65,6 @@ var users = {
         end_date: '',
         campus_name: '',
         description: '',
-        sequence: 0,
-        status: 0,
-        created_by: '',
-        created_at: '',
-        updated_by: '',
-        updated_at: ''
-    }],
-    contact: [{
-        id: 0,
-        user_profile_id: 0,
-        address: '',
-        contact_person: '',
         sequence: 0,
         status: 0,
         created_by: '',

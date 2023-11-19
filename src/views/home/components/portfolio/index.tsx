@@ -10,7 +10,7 @@ const Portfolio = ({experience}:IExperience) => {
           {experience.map((item, index) =>
             <div className="bg-gray-800 p-6 rounded-lg shadow-md" key={index}>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-400 mb-4" style={{whiteSpace: "pre-line"}}>
+              <p className="text-gray-400 mb-4" style={{whiteSpace: "pre-line", textAlign: "left"}}>
                 {item.description}
               </p>
               {/* <a className="text-blue-500 hover:underline" href="#">

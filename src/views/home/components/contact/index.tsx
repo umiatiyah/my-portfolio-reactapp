@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = ({contact}:IContact) => {
+const Contact = ({user_profile}:IUserProfile) => {
   return (
     <section id="contact" className="py-16 bg-gray-700">
       <div className="container mx-auto text-center">
@@ -8,14 +8,12 @@ const Contact = ({contact}:IContact) => {
         <p className="text-lg mb-4">
           Feel free to reach out to me.
         </p>
-        {contact.map((item, index) =>
           <a
-            className="text-blue-500 hover:underline inline-block mr-5" key={index}
-            href={"mailto:" + item.contact_person}
+            className="text-blue-500 hover:underline inline-block mr-5"
+            href={"mailto:" + user_profile.email_link}
           >
-            {item.address}
+            {user_profile.fullname}
           </a>
-        )}
       </div>
     </section>
   );
