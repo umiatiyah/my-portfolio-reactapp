@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <About user_profile={data.user.user_profile} />
       <Portfolio experience={data.user.experience}/>
-      <Contact contact={data.user.contact} />
+      <Contact user_profile={data.user.user_profile} />
     </>
   );
 };
