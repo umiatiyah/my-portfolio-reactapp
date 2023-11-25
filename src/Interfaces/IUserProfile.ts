@@ -1,3 +1,8 @@
+interface ILoginState {
+    username: string;
+    password: string;
+}
+
 interface IUserProfile {
     user_profile: {
         id: number,
