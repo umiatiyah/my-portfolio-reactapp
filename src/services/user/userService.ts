@@ -75,17 +75,22 @@ const users = {
 }
 
 const API_URL = import.meta.env.VITE_APP_API_URL;
-const token = ''
+const search = window.location.search;
+const params = new URLSearchParams(search);
+const username = params.get('username');
+console.log(username);
 
-export function UseHome() {
+export function GetUserProfile() {
   const [user, setUserProfile] = useState(users);
   const GetUserProfile = async () => {
     try {
-      const response = await fetch(`${API_URL}/userprofile/1`, {
+      // const token = localStorage.getItem('accessToken');
+      // const username = localStorage.getItem('username');
+      const response = await fetch(`${API_URL}/userprofile?username=${username}`, {
         method: 'GET',
-        headers: {
-          'Authorization': 'Bearer ' + {token},
-        }
+        // headers: {
+        //   'Authorization': 'Bearer ' + {token},
+        // }
       });
       if (!response.ok) {
         throw new Error('Network response was not ok');

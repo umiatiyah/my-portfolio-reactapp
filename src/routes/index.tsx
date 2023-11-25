@@ -1,20 +1,18 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "../views";
-import { Footer, Header, Navbar } from "~/components";
-import { UseHome } from "~/views/home/hooks";
+import App from "~/views";
+import Login from "~/views/auth/login";
+import Home from "~/views/home";
 
 const Navigations = () => {
-  const data = UseHome();  
   return (
     <BrowserRouter>
-      <main className="bg-gray-900 text-white font-sans">
-        <Navbar />
-        <Header user_profile={data.user.user_profile} />
+      <main>
         <Routes>
-          <Route path="" element={<Home />} />
+          <Route path="/" element={<App />} />
+          <Route path="/userprofile" element={<Home />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
-        <Footer />
       </main>
     </BrowserRouter>
   );
