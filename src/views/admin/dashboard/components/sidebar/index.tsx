@@ -9,7 +9,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
     <div className={`bg-zinc-700 text-white p-4 h-screen w-64 transition-all duration-1000 fixed z-10 ${
         isOpen ? '' : '-translate-x-full'
       }`}>
-      <div className=''>
+      <div>
         <img src="/au.svg" alt="Logo"
           className="max-w-40%"></img>
       </div>

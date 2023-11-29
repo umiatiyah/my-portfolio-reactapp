@@ -23,29 +23,31 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-container">
-      <form onSubmit={handleSubmit} className="login-form">
-        <label>
+    <div className="h-screen flex justify-center bg-slate-200 items-center">
+      <form onSubmit={handleSubmit} className="flex flex-col w-80">
+        <label className="mb-2">
           Username:
           <input
             type="text"
+            className="mb-4 p-2 border-slate-800 border border-solid rounded"
             name="username"
             value={loginState.username}
             onChange={handleInputChange}
             required
           />
         </label>
-        <label>
+        <label className="mb-2">
           Password:
           <input
             type="password"
+            className="mb-4 p-2 border-slate-800 border border-solid rounded"
             name="password"
             value={loginState.password}
             onChange={handleInputChange}
             required
           />
         </label>
-        <button type="submit">Login</button>
+        <button type="submit" className="p-2 bg-slate-500 text-white cursor-pointer w-10/12 rounded hover:bg-slate-900">Login</button>
       </form>
     </div>
   );
