@@ -1,11 +1,10 @@
 import React from 'react';
-import './header.css'
 
 const username = localStorage.getItem('username');
 const Header = () => {
   return (
-    <div className="header">
-      <div className="card-header bg-gray-100">
+    <div className="mb-2.5">
+      <div className="bg-gray-100 p-5 rounded-md font-medium">
         <h1>Welcome {username}!</h1>
       </div>
     </div>

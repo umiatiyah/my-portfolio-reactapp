@@ -1,5 +1,4 @@
 import React from 'react';
-import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 const username = localStorage.getItem('username');
@@ -11,7 +10,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ toggleSidebar }) => {
   return (
     <>
-        <nav className="admin-navbar p-4 flex justify-between items-center">
+        <nav className="bg-zinc-700 p-4 flex justify-between items-center">
               <button
                 className="text-white hover:text-gray-300 focus:outline-none text-2xl font-semibold"
                 onClick={toggleSidebar}

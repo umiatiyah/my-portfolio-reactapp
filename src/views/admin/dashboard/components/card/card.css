@@ -1,9 +1,3 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-
 .dashboard-card {
   border: 1px solid #ddd;
   border-radius: 8px;

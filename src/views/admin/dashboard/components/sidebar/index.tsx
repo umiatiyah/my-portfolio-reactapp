@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './sidebar.css'
 
 interface SidebarProps {
   isOpen: boolean;
@@ -8,25 +6,28 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
-    <div className={`sidebar p-4 h-screen w-64 transition-all duration-1000 fixed z-10 ${
+    <div className={`bg-zinc-700 text-white p-4 h-screen w-64 transition-all duration-1000 fixed z-10 ${
         isOpen ? '' : '-translate-x-full'
       }`}>
-      <h2>Dashboard Page</h2>
+      <div className=''>
+        <img src="/au.svg" alt="Logo"
+          className="max-w-40%"></img>
+      </div>
       <ul>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
+        <li className='mb-2.5'>
+          <a className="hover:text-sky-400" href="/dashboard">Dashboard</a>
         </li>
-        <li>
-          <Link to="/socialmedia">Social Media</Link>
+        <li className='mb-2.5'>
+          <a className="hover:text-sky-400" href="/socialmedia">Social Media</a>
         </li>
-        <li>
-          <Link to="/hobby">Hobby</Link>
+        <li className='mb-2.5'>
+          <a className="hover:text-sky-400" href="/hobby">Hobby</a>
         </li>
-        <li>
-          <Link to="/experience">Experience</Link>
+        <li className='mb-2.5'>
+          <a className="hover:text-sky-400" href="/experience">Experience</a>
         </li>
-        <li>
-          <Link to="/education">Education</Link>
+        <li className='mb-2.5'>
+          <a className="hover:text-sky-400" href="/education">Education</a>
         </li>
       </ul>
     </div>
