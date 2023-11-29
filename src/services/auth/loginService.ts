@@ -17,7 +17,7 @@ export async function PostLogin(cred: ILoginState) {
     }
     localStorage.setItem('accessToken', data.data.token_access);
     localStorage.setItem('username', data.data.username);
-    window.location.href = "/";
+    window.location.href = "/dashboard";
   } catch (err) {
     Swal.fire({
       title: "Failed to login",
