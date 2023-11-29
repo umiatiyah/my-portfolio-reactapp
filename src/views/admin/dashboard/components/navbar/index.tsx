@@ -1,6 +1,7 @@
 import React from 'react';
 import './navbar.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 const username = localStorage.getItem('username');
 
 interface NavbarProps {
@@ -10,17 +11,14 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ toggleSidebar }) => {
   return (
     <>
-        <nav className="admin-navbar py-4">
-          <div className="container flex items-center">
-            <div className="logo">
+        <nav className="admin-navbar p-4 flex justify-between items-center">
               <button
                 className="text-white hover:text-gray-300 focus:outline-none text-2xl font-semibold"
                 onClick={toggleSidebar}
               >
-                mee
+                <FontAwesomeIcon icon={faBars} />
               </button>
-            </div>
-          </div>
+              <div className="text-white">{username}</div>
         </nav>
     </>
   );
