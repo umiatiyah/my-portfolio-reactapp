@@ -1,0 +1,9 @@
+.header {
+    margin-bottom: 10px;
+}
+.card-header {
+  color: #000;
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 5px;
+}
