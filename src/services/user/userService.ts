@@ -74,7 +74,7 @@ const users = {
     }]
 }
 
-const API_URL = import.meta.env.VITE_APP_API_URL;
+const API_URL = import.meta.env.VITE_VERCEL_APP_API_URL;
 const search = window.location.search;
 const params = new URLSearchParams(search);
 const username = params.get('username');
