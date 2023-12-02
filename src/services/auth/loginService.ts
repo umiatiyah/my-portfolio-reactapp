@@ -4,7 +4,7 @@ const API_URL = import.meta.env.VITE_VERCEL_APP_API_URL;
 
 export async function PostLogin(cred: ILoginState) {
   try {
-    const response = await fetch(`${API_URL}/auth/login`, {
+    const response = await fetch(`http://203.175.11.137:8082/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
