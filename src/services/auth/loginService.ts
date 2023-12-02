@@ -1,6 +1,5 @@
 import Swal from "sweetalert2";
 
-const API_URL = import.meta.env.VITE_VERCEL_APP_API_URL;
 
 export async function PostLogin(cred: ILoginState) {
   try {
